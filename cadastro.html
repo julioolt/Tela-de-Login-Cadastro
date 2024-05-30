@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <section class="area-cadastro">
+        <div class="cadastro">
+            <div>
+                <img src="img/Logo.png" alt="Logo Game da Cidadania">
+            </div>
+            <form method="post" action="processar-dados.php">
+                <input type="text" name="nome" placeholder="Usuario" autofocus required>
+                <input type="email" name="email" placeholder="Email" autofocus required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="submit" onclick="logar()" value="Cadastrar">
+            </form>
+
+            <p>Já possui conta?<a onclick="redirecionar()">Fazer Login</a></p>
+        </div>
+    </section>
+</body>
+</html>
